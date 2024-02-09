@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+ 
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+h2{
+    font-size: 2.5em;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.img {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    position: center;
+    left: 50%;
+    padding-left: 30%;
+}
+
+.img img {
+    width: 200px;
+    display: inline-block; /* Ensures that the image is treated as an inline-block element */
+    align-self: center;
+}
+.text-right {
+    padding-left: 5%;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+   
+}
+.jp{
+    font-size: 20px;
+}
+
+section {   
+    padding: 60px 0;
+}
+.extraskill{
+    border-color: #343a40;
+    border: #343a40;
+    background-color: rgb(255, 255, 255);
+}
+
+#skills {
+    background-color: #fff;
+}
+
+#activities {
+    background-color: #f8f9fa;
+}
+
+#motivation {
+    background-color: #e9ecef;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h2 {
+    color: #343a40;
+}
+
+h4 {
+    color: #343a40;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    /* Add margin-top to create space between the content and footer */
+    margin-top: 20px;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+.container{
+    font-size: 20px;
+}
+.cont {
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+.cont p{
+    font-size: 20px;
+}
+
+/* Added width for better layout */
+.row {
+    margin: 0 -15px;
+}
+
+.col-md-6 {
+    padding: 0 15px;
+}
+
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #7a7676;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-right {
+    float: right;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
+.timeline {
+    position: relative;
+    float: left; /* Add float left to make it appear on the left side */
+    width: 45%; /* Adjust the width based on your design */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.timelineb {
+    position: relative;
+    float: right; /* Add float right to make it appear on the right side */
+    width: 45%; /* Adjust the width based on your design */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.timeline-entry {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.timeline-year {
+    width: 80px;
+    font-weight: bold;
+}
+
+.timeline-content {
+    margin-left: 20px;
+}
+
+.timeline-line {
+    position: absolute;
+    width: 2px;
+    background-color: #343a40; /* Line color */
+    top: 0;
+    bottom: 0;
+    left: 70px; /* Adjust the left position based on your design */
+    margin-left: -1px; /* Half of the line width to center it */
+}
+
+.timelineb .timeline-line {
+    left: 70px; /* Reset left position for timelineb */
+    right: auto; /* Adjust the right position based on your design */
+}
+
+
+/* Responsive Styles for Timeline */
+@media (max-width: 768px) {
+    .timeline-entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-year {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .timeline-line {
+        left: 0;
+    }
+}
+
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skills-list li {
+    margin: 5px;
+    padding: 10px;
+    background: linear-gradient(180deg, #3498db, #2980b9);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .card {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(30, 30, 30);
+    color: white;
+  }
+.card img{
+    width: 100%;
+}
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .card p {
+    font-size: 14px;
+    margin: 0;
+  }
